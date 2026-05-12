@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Python Developer Intern",
+    "company": "Google",
+    "location": "Bangalore",
+    "type": "Internship",
+    "apply_link": "https://careers.google.com",
+    "skills": ["python", "flask", "sql", "git"]
+  },
+  {
+    "title": "Frontend Developer",
+    "company": "Microsoft",
+    "location": "Hyderabad",
+    "type": "Full Time",
+    "apply_link": "https://careers.microsoft.com",
+    "skills": ["html", "css", "javascript", "react"]
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Amazon",
+    "location": "Delhi",
+    "type": "Full Time",
+    "apply_link": "https://www.amazon.jobs",
+    "skills": ["python", "tensorflow", "numpy", "pandas", "machine learning"]
+  },
+  {
+    "title": "Java Backend Developer",
+    "company": "Infosys",
+    "location": "Pune",
+    "type": "Full Time",
+    "apply_link": "https://careers.infosys.com",
+    "skills": ["java", "spring", "mysql", "hibernate"]
+  },
+  {
+    "title": "Data Analyst Intern",
+    "company": "TCS",
+    "location": "Noida",
+    "type": "Internship",
+    "apply_link": "https://www.tcs.com/careers",
+    "skills": ["python", "excel", "sql", "pandas"]
+  },
+  {
+    "title": "Full Stack Developer",
+    "company": "Accenture",
+    "location": "Gurgaon",
+    "type": "Full Time",
+    "apply_link": "https://www.accenture.com/in-en/careers",
+    "skills": ["react", "nodejs", "mongodb", "javascript", "api"]
+  },
+  {
+    "title": "Cloud Engineer",
+    "company": "IBM",
+    "location": "Chennai",
+    "type": "Full Time",
+    "apply_link": "https://www.ibm.com/careers",
+    "skills": ["aws", "python", "linux", "docker", "kubernetes"]
+  },
+  {
+    "title": "UI/UX Designer Intern",
+    "company": "Adobe",
+    "location": "Mumbai",
+    "type": "Internship",
+    "apply_link": "https://careers.adobe.com",
+    "skills": ["figma", "ui", "ux", "html", "css"]
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Meta",
+    "location": "Remote",
+    "type": "Full Time",
+    "apply_link": "https://www.metacareers.com",
+    "skills": ["javascript", "react", "nodejs", "api", "mongodb"]
+  },
+  {
+    "title": "AI Research Intern",
+    "company": "OpenAI",
+    "location": "Remote",
+    "type": "Internship",
+    "apply_link": "https://openai.com/careers",
+    "skills": ["python", "deep learning", "machine learning", "tensorflow"]
+  },
+  {
+    "title": "Cyber Security Analyst",
+    "company": "Deloitte",
+    "location": "Bangalore",
+    "type": "Full Time",
+    "apply_link": "https://www2.deloitte.com",
+    "skills": ["networking", "linux", "python", "security"]
+  },
+  {
+    "title": "DevOps Engineer",
+    "company": "Oracle",
+    "location": "Noida",
+    "type": "Full Time",
+    "apply_link": "https://www.oracle.com/careers",
+    "skills": ["docker", "kubernetes", "aws", "linux", "git"]
+  }
+]
