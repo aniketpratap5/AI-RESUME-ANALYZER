@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyzer Pro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="floating floating-1">✨</div>
+<div class="floating floating-2">🚀</div>
+<div class="floating floating-3">💼</div>
+<div class="floating floating-4">🔥</div>
+<div class="floating floating-5">🎯</div>
+<div class="floating floating-6">⚡</div>
+<div class="floating floating-7">🌈</div>
+<div class="floating floating-8">🤖</div>
+<div class="floating floating-9">💡</div>
+<div class="floating floating-10">🎨</div>
+
+<div class="hero-section">
+    <div class="overlay"></div>
+
+    <div class="container">
+        <div class="hero-text">
+            <div class="top-banner">
+                🚀 Trusted by Students, Developers & Dreamers Worldwide ✨
+            </div>
+            <h1>
+                Build Your <span>Dream Career</span> 🚀
+            </h1>
+
+            <p>
+                AI-powered resume magic that finds your perfect jobs,
+                internships, boosts ATS score, and helps you stand out
+                from the crowd ✨
+            </p>
+
+            <div class="fun-tags">
+                <span>🔥 Smart ATS Scanner</span>
+                <span>💼 Real Jobs</span>
+                <span>⚡ AI Matching</span>
+                <span>🚀 Internship Finder</span>
+            </div>
+        </div>
+
+        <div class="doodle-line"></div>
+
+        <div class="upload-card">
+            <form method="POST" enctype="multipart/form-data">
+                <input type="file" name="resume" required>
+                <button type="submit">Analyze Resume</button>
+            </form>
+        </div>
+
+        {% if skills %}
+
+        <div class="dashboard-grid">
+
+            <div class="card ats-card">
+                <h2>ATS Score</h2>
+                <div class="score-circle">
+                    <span>{{ ats_score }}%</span>
+                </div>
+            </div>
+
+            <div class="card skills-card">
+                <h2>Detected Skills</h2>
+                <div class="skills">
+                    {% for skill in skills %}
+                    <span>{{ skill }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card jobs-card">
+            <h2>Recommended Jobs & Internships</h2>
+
+            <div class="job-grid">
+                {% for job in jobs %}
+
+                <div class="job-box">
+                    <div class="job-header">
+                        <h3>{{ job.title }}</h3>
+                        <span class="badge">{{ job.job_type }}</span>
+                    </div>
+
+                    <h4>{{ job.company }}</h4>
+                    <p class="location">📍 {{ job.location }}</p>
+
+                    <div class="match-bar">
+                        <div class="match-fill" style="width: {{ job.match_percentage }}%;"></div>
+                    </div>
+
+                    <p><strong>Match:</strong> {{ job.match_percentage }}%</p>
+
+                    <div class="section">
+                        <h5>Required Skills</h5>
+                        <div class="mini-skills">
+                            {% for skill in job.required_skills %}
+                            <span>{{ skill }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h5>Missing Skills</h5>
+                        <div class="mini-skills red">
+                            {% for skill in job.missing_skills %}
+                            <span>{{ skill }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <a href="{{ job.apply_link }}" target="_blank" class="apply-btn">
+                        Apply Now
+                    </a>
+                </div>
+
+                {% endfor %}
+            </div>
+        </div>
+
+        {% endif %}
+    </div>
+</div>
+
+</body>
+</html
